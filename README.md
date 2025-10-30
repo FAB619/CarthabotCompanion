@@ -2,6 +2,8 @@
 
 **CarthaBot Companion** is a Windows-based application developed by **FAB619** to enhance the learning experience with **CarthaBot**, an educational robot for children. The app provides interactive modules that help students explore technology, programming, and robotics in a safe and engaging way.
 
+🌐 Visit the official website: [CarthaBot](https://carthabot.vercel.app/en)
+
 ## 🚀 Features
 
 - **Mode Modules**  
