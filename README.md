@@ -39,7 +39,8 @@
 
 ## 📄 License
 
-This project is licensed under a **Custom Proprietary License** – see the [LICENSE](LICENSE) file for details. Usage, modification, or distribution without written permission from **FAB619** is strictly prohibited.
+This project is licensed under a **CarthaBot Companion License** – see the [LICENSE](LICENSE) file for details.
+Usage, modification, or distribution without written permission from FAB619 is strictly prohibited.
 
 ## 👨‍🏫 Authors
 
