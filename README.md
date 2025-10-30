@@ -18,7 +18,6 @@
   - View example PDFs to guide students
 
 - **Advanced Python Programming**
-  - Flash Rabot with MicroPython
   - Launch a Python Notepad interface for advanced coding
 
 ## 📦 Installation
