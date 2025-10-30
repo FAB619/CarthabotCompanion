@@ -35,11 +35,11 @@
 ## 📚 Documentation
 
 - Example PDFs and tutorials are available in the application.
-- For drag-and-drop programming, the app uses a Scratch-like interface wich called **CarthSoft**.
+- For drag-and-drop programming, the app uses a Scratch-like interface which is called **CarthSoft**.
 
 ## 📄 License
 
-This project is licensed under the **Apache 2.0 License** – see the [LICENSE](LICENSE) file for details.
+This project is licensed under a **Custom Proprietary License** – see the [LICENSE](LICENSE) file for details. Usage, modification, or distribution without written permission from **FAB619** is strictly prohibited.
 
 ## 👨‍🏫 Authors
 
