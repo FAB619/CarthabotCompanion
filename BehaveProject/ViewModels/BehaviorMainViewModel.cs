@@ -47,20 +47,20 @@ namespace BehaveProject.ViewModels
             _eventAggregator = eventAggregator;
             Modes = new ObservableCollection<Mode>();
 
-            Modes.Add(new Mode(_eventAggregator, "Éviteur d'obstacles",
+            Modes.Add(new Mode(_eventAggregator, "Obstacle Avoider",
                 new SolidColorBrush(Color.FromRgb(247, 148, 28)),
                 "In this mode, the robot uses infrared (IR) sensors to detect obstacles in its path and autonomously adjusts its direction to prevent collisions. The IR sensors continuously monitor the surroundings, and when an object is detected within a predefined distance, the robot changes its trajectory to navigate safely.",
                 true)); // #F7941C
 
-            Modes.Add(new Mode(_eventAggregator, "Suiveur",
+            Modes.Add(new Mode(_eventAggregator, "Line Follower",
                 new SolidColorBrush(Color.FromRgb(0, 255, 0)),
                 "In this mode, the robot follows a predefined path marked by a line (black line on a white surface) using infrared line sensors. It continuously reads the line position and adjusts its steering to stay on track.")); // #00FF00
 
-            Modes.Add(new Mode(_eventAggregator, "Amical",
+            Modes.Add(new Mode(_eventAggregator, "Friendly",
                 new SolidColorBrush(Color.FromRgb(88, 127, 237)),
                 "In this mode, the robot’s movement is manually controlled using physical buttons located on the robot itself. Each button corresponds to a specific action, such as moving forward, backward, turning left, or turning right.")); // #587fed
 
-            Modes.Add(new Mode(_eventAggregator, "Obéissant",
+            Modes.Add(new Mode(_eventAggregator, "Obedient",
                 new SolidColorBrush(Color.FromRgb(241, 100, 162)),
                 "In this mode, the robot uses infrared (IR) sensors to detect and follow a specific object, such as a hand. The robot continuously monitors the target’s position and adjusts its movement to minimize the gap and stay close to the object.")); // #F164A2
             _eventAggregator.GetEvent<SelectedModeEvent>().Subscribe(SelectedModeMethod);
