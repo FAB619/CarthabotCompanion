@@ -8,15 +8,12 @@
 
 - **Mode Modules**  
   Flash preprogrammed modes to Rabot such as:
-
   - Obstacle Avoider
   - Line Follower
   - Friendly
   - Obedient
 
-- **MicroPython Flasher + Web IDE**
-
-  - Flash Rabot with MicroPython firmware
+- **Learn Visual Programming + Web IDE**
   - Launch a drag-and-drop programming interface (similar to Scratch) **CarthaSoft**
   - View example PDFs to guide students
 
