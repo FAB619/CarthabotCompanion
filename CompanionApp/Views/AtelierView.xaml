@@ -61,7 +61,63 @@
                         <!-- Content -->
                         <Grid>
                             <!-- Colored background + Icon -->
-                            <Border Background="{Binding Atelier[1].Color}" Margin="10" CornerRadius="10">
+                            <Grid>
+                                <Grid.Style>
+                                    <Style TargetType="Grid">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Atelier[1].OnHovered}" Value="false">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Grid.Style>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="0.3*"/>
+                                </Grid.RowDefinitions>
+                                <Border Background="{Binding Atelier[1].Color}" Margin="5 5 5 0" CornerRadius="10">
+                                    <Viewbox>
+                                        <Image Source="../Resources/Images/Icons/mode.png"
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Setter Property="Width" Value="100"/>
+                                                    <Setter Property="Height" Value="50"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Atelier[1].OnHovered}" Value="true">
+                                                            <Setter Property="Width" Value="150"/>
+                                                            <Setter Property="Height" Value="100"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Viewbox>
+                                </Border>
+                                <TextBlock Grid.Row="1" 
+                                           FontWeight="DemiBold"
+                                           TextWrapping="Wrap" 
+                                           TextAlignment="Center"
+                                           FontSize="17"
+                                           Text="{DynamicResource behav}" 
+                                           VerticalAlignment="Center" 
+                                           HorizontalAlignment="Center">
+                                    
+                                </TextBlock>
+                            </Grid>
+                            <Border Background="{Binding Atelier[1].Color}" Margin="5" CornerRadius="10">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Atelier[1].OnHovered}" Value="true">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
                                 <Viewbox>
                                     <Image Source="../Resources/Images/Icons/mode.png"
                                            VerticalAlignment="Center"
@@ -167,11 +223,69 @@
                         </i:Interaction.Triggers>
 
                         <!-- Content -->
+                        
+                        
                         <Grid>
                             <!-- Colored background + Icon -->
-                            <Border Background="{Binding Atelier[0].Color}" Margin="10" CornerRadius="10">
+                            <Grid>
+                                <Grid.Style>
+                                    <Style TargetType="Grid">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Atelier[0].OnHovered}" Value="false">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Grid.Style>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="0.3*"/>
+                                </Grid.RowDefinitions>
+                                <Border Background="{Binding Atelier[0].Color}" Margin="5 5 5 0" CornerRadius="10">
+                                    <Viewbox>
+                                        <Image Source="../Resources/Images/Icons/puzzle.png"
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Setter Property="Width" Value="100"/>
+                                                    <Setter Property="Height" Value="50"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Atelier[0].OnHovered}" Value="true">
+                                                            <Setter Property="Width" Value="150"/>
+                                                            <Setter Property="Height" Value="100"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Viewbox>
+                                </Border>
+                                <TextBlock Grid.Row="1" 
+                                           FontWeight="DemiBold"
+                                           TextWrapping="Wrap" 
+                                           TextAlignment="Center"
+                                           FontSize="17"
+                                           Text="{DynamicResource learn}" 
+                                           VerticalAlignment="Center" 
+                                           HorizontalAlignment="Center">
+
+                                </TextBlock>
+                            </Grid>
+                            <Border Background="{Binding Atelier[0].Color}" Margin="5" CornerRadius="10">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Atelier[0].OnHovered}" Value="true">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
                                 <Viewbox>
-                                    <Image Source="../Resources/Images/Icons/puzzle.png"
+                                    <Image Source="../Resources/Images/Icons/mode.png"
                                            VerticalAlignment="Center"
                                            HorizontalAlignment="Center">
                                         <Image.Style>
@@ -285,12 +399,27 @@
 
                         <!-- Contenu -->
                         <Grid>
-                            <Border Background="{Binding Atelier[2].Color}" Margin="10" CornerRadius="10">
-                                <Viewbox>
-                                    <Grid>
+
+                            <Grid>
+                                <Grid.Style>
+                                    <Style TargetType="Grid">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Atelier[2].OnHovered}" Value="false">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Grid.Style>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="0.3*"/>
+                                </Grid.RowDefinitions>
+                                <Border Background="{Binding Atelier[2].Color}" Margin="5 5 5 0" CornerRadius="10">
+                                    <Viewbox>
                                         <Image Source="../Resources/Images/Icons/python.png"
-                                               VerticalAlignment="Center"
-                                               HorizontalAlignment="Center">
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center">
                                             <Image.Style>
                                                 <Style TargetType="Image">
                                                     <Setter Property="Width" Value="100"/>
@@ -304,11 +433,52 @@
                                                 </Style>
                                             </Image.Style>
                                         </Image>
+                                    </Viewbox>
+                                </Border>
+                                <TextBlock Grid.Row="1" 
+                                           FontWeight="DemiBold" 
+                                           TextWrapping="Wrap" 
+                                           TextAlignment="Center"
+                                           FontSize="17"
+                                           Text="{DynamicResource python}" 
+                                           VerticalAlignment="Center" 
+                                           HorizontalAlignment="Center">
 
-                                    </Grid>
-
+                                </TextBlock>
+                            </Grid>
+                            <Border Background="{Binding Atelier[2].Color}" Margin="5" CornerRadius="10">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Atelier[2].OnHovered}" Value="true">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <Viewbox>
+                                    <Image Source="../Resources/Images/Icons/mode.png"
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center">
+                                        <Image.Style>
+                                            <Style TargetType="Image">
+                                                <Setter Property="Width" Value="100"/>
+                                                <Setter Property="Height" Value="50"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Atelier[2].OnHovered}" Value="true">
+                                                        <Setter Property="Width" Value="150"/>
+                                                        <Setter Property="Height" Value="100"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
                                 </Viewbox>
                             </Border>
+
+                            
+                            
                             <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" CornerRadius="10">
                                 
                                 
