@@ -53,7 +53,7 @@ namespace CompanionApp.Models.Classes
         public CustomNotification(string[] message) : base (message[0],new MessageOptions())
         {
             Message = message[0];
-            Version = $"({message[1]})";
+            Version = $"{message[1]}";
 
             DisplayPart.Height = 100;
             UpdateCommand = new DelegateCommand(UpdateMethod);
