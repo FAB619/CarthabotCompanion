@@ -36,7 +36,12 @@ namespace LearningProject.ViewModels
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
-
+        private Uri _src;
+        public Uri source
+        {
+            get { return _src; }
+            set { SetProperty(ref _src, value); }
+        }
         public LearningMainViewModel(IEventAggregator eventAggregator)
         {
             _eventAggregator = eventAggregator;
@@ -44,19 +49,22 @@ namespace LearningProject.ViewModels
             CloseViewCommand = new DelegateCommand(CloseViewMethod);
             initList();
             PDFSelectedMethod("Commande Boutons");
+            string sourceFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CarthaSoft");
+            string htmlFile = Path.Combine(sourceFolder, "CarthaSoft.html");
 
+            source = new Uri(@$"{htmlFile}");
         }
 
         private void CloseViewMethod()
         {
-            _eventAggregator.GetEvent<LearnCloseEvent>().Publish();     
+            _eventAggregator.GetEvent<LearnCloseEvent>().Publish();
         }
 
         private void PDFSelectedMethod(string obj)
         {
-            foreach(var e in _exempelsList)
+            foreach (var e in _exempelsList)
             {
-                if(e.Name == obj)
+                if (e.Name == obj)
                 {
                     e.IsSelected = true;
                     _eventAggregator.GetEvent<LoadPDFEvent>().Publish(e.Path);
@@ -69,7 +77,7 @@ namespace LearningProject.ViewModels
             }
         }
 
-        
+
 
         private void initList()
         {

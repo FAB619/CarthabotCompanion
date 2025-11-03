@@ -5,6 +5,7 @@ using BehaveProject.Views;
 using CompanionApp.Events;
 using CompanionApp.Models;
 using CompanionApp.Service;
+using CompanionApp.Views;
 using LearningProject.Models.Events;
 using LearningProject.Views;
 using MazeProject.Events;
@@ -76,9 +77,10 @@ namespace CompanionApp.ViewModels
         public DelegateCommand OpenWebSiteCommand { get; set; }
         public DelegateCommand OpenWebGithubCommand { get; set; }
         public DelegateCommand OpenWebCarthaSoftCommand { get; set; }
+        public DelegateCommand OpenAssamblyCommand { get; set; }
 
 
-
+        
 
 
         /// <summary>/// Prism Property/// </summary>
@@ -155,26 +157,37 @@ namespace CompanionApp.ViewModels
             _eventAggregator.GetEvent<MazeCloseEvent>().Subscribe(CloseViewMethod);
             _eventAggregator.GetEvent<AdvancedProgrammingCloseEvent>().Subscribe(CloseViewMethod);
 
-            
+
             OpenWebSiteCommand = new DelegateCommand(OpenWebSiteMethod);
             OpenWebGithubCommand = new DelegateCommand(OpenWebGithubMethod);
             OpenWebCarthaSoftCommand = new DelegateCommand(OpenWebCarthaSoftMethod);
+            OpenAssamblyCommand = new DelegateCommand(OpenAssamblyMethod);
 
 
 
 
         }
 
-        private void OpenWebCarthaSoftMethod()
+        private async void OpenAssamblyMethod()
         {
-            string sourceFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CarthaSoft");
-            string sourceFile = Path.Combine(sourceFolder, "CarthaSoft.html");
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = sourceFile,
-                UseShellExecute = true 
+            ShowPlugInAnimation = false;
+            IsViewVisiblity = Visibility.Visible;
 
-            });
+            _eventAggregator.GetEvent<ShowSlidingViewEvent>().Publish(true);
+
+            await Task.Delay(1500);
+            View = new AssamblyView();
+        }
+        
+        private async void OpenWebCarthaSoftMethod()
+        {
+            ShowPlugInAnimation = false;
+            IsViewVisiblity = Visibility.Visible;
+
+            _eventAggregator.GetEvent<ShowSlidingViewEvent>().Publish(true);
+
+            await Task.Delay(1500);
+            View = new LearningMainView(_eventAggregator);
         }
 
         private void OpenWebGithubMethod()
@@ -219,6 +232,7 @@ namespace CompanionApp.ViewModels
                                          d.IsReady &&
                                          string.Equals(d.VolumeLabel, "RPI-RP2", StringComparison.OrdinalIgnoreCase));
 
+
                 if (drive == null)
                 {
                     dispatcherTimer.Start();
@@ -261,18 +275,12 @@ namespace CompanionApp.ViewModels
                 {
                     case Module.Learn:
                         {
-                            string sourceFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CarthaSoft");
-                            string htmlFile = Path.Combine(sourceFolder, "CarthaSoft.html");
-                            Process.Start(new ProcessStartInfo
-                            {
-                                FileName = htmlFile,
-                                UseShellExecute = true
-                            });
-
-                            View = new LearningMainView(_eventAggregator);
                             IsViewVisiblity = Visibility.Visible;
+
                             _eventAggregator.GetEvent<ShowSlidingViewEvent>().Publish(true);
-                            _eventAggregator.GetEvent<LoadPDFEvent>().Publish("Commande_Boutons.pdf");
+
+                            await Task.Delay(1500);
+                            View = new LearningMainView(_eventAggregator);
                             break;
                         }
 
@@ -339,7 +347,7 @@ namespace CompanionApp.ViewModels
                 default:
                     break;
             }
-            
+
             /*_dialogService.ShowDialog("PlugAndPowerOnView", new DialogParameters
             {
                 {"module",obj}

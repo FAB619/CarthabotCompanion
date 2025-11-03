@@ -12,6 +12,25 @@
     <Page Remove="CarthaSoft\**" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Resources\Assambly\Exploded View.svg" />
+    <None Remove="Resources\Assambly\Main View.svg" />
+    <None Remove="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_0.jpg" />
+    <None Remove="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_1.jpg" />
+    <None Remove="Resources\Assambly\STEP 1.svg" />
+    <None Remove="Resources\Assambly\STEP 10.svg" />
+    <None Remove="Resources\Assambly\STEP 11.svg" />
+    <None Remove="Resources\Assambly\STEP 12.svg" />
+    <None Remove="Resources\Assambly\STEP 13.svg" />
+    <None Remove="Resources\Assambly\STEP 14.svg" />
+    <None Remove="Resources\Assambly\STEP 15.svg" />
+    <None Remove="Resources\Assambly\STEP 2.svg" />
+    <None Remove="Resources\Assambly\STEP 3.svg" />
+    <None Remove="Resources\Assambly\STEP 4.svg" />
+    <None Remove="Resources\Assambly\STEP 5.svg" />
+    <None Remove="Resources\Assambly\STEP 6.svg" />
+    <None Remove="Resources\Assambly\STEP 7.svg" />
+    <None Remove="Resources\Assambly\STEP 8.svg" />
+    <None Remove="Resources\Assambly\STEP 9.svg" />
     <None Remove="Resources\BootLoader_microPython.uf2" />
     <None Remove="Resources\en.png" />
     <None Remove="Resources\fr.png" />
@@ -43,9 +62,9 @@
     <None Remove="Resources\robotR.png" />
     <None Remove="Resources\robotU.png" />
     <None Remove="Resources\Settings.ini" />
+    <None Remove="Resources\technical-drawing.png" />
     <None Remove="Resources\u2f\BootLoader_microPython.uf2" />
     <None Remove="Resources\u2f\MazeCode.uf2" />
-    <None Remove="Resources\u2f\Modes.uf2" />
   </ItemGroup>
   <ItemGroup>
     <Page Remove="Resources\StringResources-FR.xaml" />
@@ -53,6 +72,63 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FAB619.ico" />
+    <Content Include="Resources\Assambly\Exploded View.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\Main View.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_0.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 1.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 10.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 11.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 12.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 13.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 14.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 15.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 2.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 3.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 4.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 5.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 6.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 7.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 8.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Assambly\STEP 9.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\CarthaSoftLogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -119,10 +195,13 @@
     <Content Include="Resources\robotR.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\u2f\MazeCode.uf2">
+    <Content Include="Resources\technical-drawing.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\u2f\Modes.uf2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\u2f\MazeCode.uf2">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

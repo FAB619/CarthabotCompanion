@@ -68,4 +68,6 @@
     <system:String x:Key="tooltipStart">Run the script</system:String>
     <system:String x:Key="tooltipStop">Stop the script</system:String>
 
+    <system:String x:Key="techincalDoc">Technical Documentation</system:String>
+
 </ResourceDictionary>
