@@ -2,9 +2,9 @@
 
 **CarthaBot Companion** is a Windows-based application developed by **FAB619** to enhance the learning experience with **CarthaBot**, an educational robot for children. The app provides interactive modules that help students explore technology, programming, and robotics in a safe and engaging way.
 
+<img width="1536" height="864" alt="Diagramme sans nom-Page-2 drawio" src="https://github.com/user-attachments/assets/f9c871d9-ab72-469d-8356-8a89f4e5c03c" />
 
 🌐 Visit the official website: [CarthaBot](https://carthabot.vercel.app/en)
-<img width="1920" height="449" alt="Diagramme sans nom drawio" src="https://github.com/user-attachments/assets/39ed68d0-0c9d-4e27-a5fe-0b7ab2a84b9c" />
 
 
 ## 🚀 Features
