@@ -41,7 +41,7 @@
 
 
             <ScrollViewer Grid.Row="1" Margin="5" Background="White" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
-                <wv2:WebView2  Width="2000" Height="2000"
+                <wv2:WebView2  
                  
                   Source="{Binding source}" />
             </ScrollViewer>
