@@ -14,8 +14,8 @@
   <ItemGroup>
     <None Remove="Resources\Assambly\Exploded View.svg" />
     <None Remove="Resources\Assambly\Main View.svg" />
-    <None Remove="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_0.jpg" />
-    <None Remove="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_1.jpg" />
+    <None Remove="Resources\Assambly\Main View_files\bd0fac8be5a0025a_image_0.jpg" />
+    <None Remove="Resources\Assambly\Main View_files\bd0fac8be5a0025a_image_1.jpg" />
     <None Remove="Resources\Assambly\STEP 1.svg" />
     <None Remove="Resources\Assambly\STEP 10.svg" />
     <None Remove="Resources\Assambly\STEP 11.svg" />
@@ -78,10 +78,10 @@
     <Content Include="Resources\Assambly\Main View.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_0.jpg">
+    <Content Include="Resources\Assambly\Main View_files\bd0fac8be5a0025a_image_0.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Assambly\Main View_files\8e9bef474a4e06b9_image_1.jpg">
+    <Content Include="Resources\Assambly\Main View_files\bd0fac8be5a0025a_image_1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Assambly\STEP 1.svg">

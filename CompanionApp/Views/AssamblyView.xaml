@@ -40,7 +40,7 @@
             </Border>
 
 
-            <ScrollViewer Grid.Row="1" Margin="5" Background="White" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <ScrollViewer Grid.Row="1" Margin="5" Background="White" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
                 <wv2:WebView2  Width="2000" Height="2000"
                  
                   Source="{Binding source}" />

@@ -68,6 +68,11 @@
     <system:String x:Key="tooltipStart">Run the script</system:String>
     <system:String x:Key="tooltipStop">Stop the script</system:String>
 
-    <system:String x:Key="techincalDoc">Technical Documentation</system:String>
+    <system:String x:Key="techincalDoc">Assembly Manual</system:String>
+
+
+    <system:String x:Key="flashModes">Flash preprogrammed modes to Rabot such as: Obstacle Avoider, Line Follower, Friendly, Obedient</system:String>
+    <system:String x:Key="learnVisualProgramming">Learn Visual Programming: Launch a drag-and-drop programming interface (similar to Scratch)</system:String>
+    <system:String x:Key="advancedPython">Advanced Python Programming: Launch a Python Notepad interface for advanced coding</system:String>
 
 </ResourceDictionary>

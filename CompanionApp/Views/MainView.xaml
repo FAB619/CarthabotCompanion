@@ -43,7 +43,7 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
+
         <Storyboard x:Key="CollapseHeightStoryboard">
             <DoubleAnimation Storyboard.TargetName="SlidingGridScaleTransform" 
                              Storyboard.TargetProperty="ScaleY" 
@@ -75,15 +75,15 @@
             <Grid  Margin="2.5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition Width="0.2*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
-
+                    <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
-                <Border Grid.Row="0" Visibility="Collapsed" Margin="2.5" Grid.Column="1"
+                <Border  Grid.Row="0"  Margin="2.5" Grid.Column="1"
                     Cursor="Hand" BorderBrush="Gray" Background="#2d383c"
                     BorderThickness="2" CornerRadius="10"
                     VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -94,7 +94,8 @@
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
 
-                    <Grid Style="{StaticResource HoverScaleStyle}"  Background="Transparent" VerticalAlignment="Center">
+
+                    <Grid  Style="{StaticResource HoverScaleStyle}" Background="Transparent" VerticalAlignment="Center">
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
@@ -109,7 +110,7 @@
                             <TextBlock Text="{DynamicResource techincalDoc}" 
                                Grid.Row="1"
                                Foreground="#FFFFFFFF" TextWrapping="Wrap" TextAlignment="Center"
-                               Margin="0 10 0 0"
+                               Margin="0 5"
                                HorizontalAlignment="Center"
                                FontWeight="DemiBold"
                                FontSize="20"/>
@@ -118,7 +119,7 @@
                     </Grid>
                 </Border>
 
-                <Border Grid.Row="1" Margin="2.5" Grid.Column="1"
+                <Border Grid.Row="2" Margin="2.5" Grid.Column="1"
                     Cursor="Hand" BorderBrush="Gray" Background="#2d383c"
                     BorderThickness="2" CornerRadius="10"
                     VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -133,14 +134,14 @@
 
                         <StackPanel Orientation="Vertical">
                             <iconpack:PackIconFontAwesome Kind="GlobeSolid"
-                          Width="120" Height="120"
+                          Width="100" Height="100"
                           VerticalAlignment="Center"
                           HorizontalAlignment="Stretch"/>
 
                             <TextBlock Text="{DynamicResource siteOur}" 
                            Grid.Row="1"
                            Foreground="#FFFFFFFF"
-                           Margin="0 10"
+                           Margin="0 5"
                            HorizontalAlignment="Center"
                            FontWeight="DemiBold"
                            FontSize="20"/>
@@ -149,7 +150,7 @@
                     </Grid>
                 </Border>
 
-                <Border Grid.Row="2" Margin="2.5" Grid.Column="1"
+                <Border Grid.Row="3" Margin="2.5" Grid.Column="1"
                     Cursor="Hand" BorderBrush="Gray" Background="#2d383c"
                     BorderThickness="2" CornerRadius="10"
                     VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -165,14 +166,14 @@
 
                         <StackPanel Orientation="Vertical">
                             <iconpack:PackIconEvaIcons Kind="Github"
-                                      Width="120" Height="120"
+                                      Width="100" Height="100"
                                       VerticalAlignment="Center"
                                       HorizontalAlignment="Stretch"/>
 
                             <TextBlock Text="{DynamicResource githubOur}" 
                            Grid.Row="1"
                            Foreground="#FFFFFFFF"
-                           Margin="0 10"
+                           Margin="0 5"
                            HorizontalAlignment="Center"
                            FontWeight="DemiBold"
                            FontSize="20"/>
@@ -181,7 +182,7 @@
                     </Grid>
                 </Border>
 
-                <Border Grid.Row="0" Margin="2.5" Grid.Column="1"
+                <Border Grid.Row="1" Margin="2.5" Grid.Column="1"
                         Cursor="Hand" BorderBrush="Gray" Background="#2d383c"
                         BorderThickness="2" CornerRadius="10"
                         VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -199,14 +200,14 @@
 
                         <StackPanel Orientation="Vertical">
                             <Image Source="../Resources/CarthaSoftLogo.png"
-                              Width="125" Height="125"
+                              Width="110" Height="110"
                               VerticalAlignment="Center" 
                               HorizontalAlignment="Center"/>
 
                             <TextBlock Text="CarthaSoft" 
                                Grid.Row="1"
                                Foreground="#FFFFFFFF"
-                               Margin="0 0 0 0"
+                               Margin="0"
                                HorizontalAlignment="Center"
                                FontWeight="DemiBold"
                                FontSize="20"/>
