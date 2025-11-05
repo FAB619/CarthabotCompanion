@@ -75,5 +75,16 @@
     <system:String x:Key="flashModes">Flasher des modes préprogrammés sur Rabot tels que : Évite Obstacles, Suiveur de Ligne, Amical, Obéissant</system:String>
     <system:String x:Key="learnVisualProgramming">Apprendre la programmation visuelle : Lancez une interface de programmation par glisser-déposer (similaire à Scratch)</system:String>
     <system:String x:Key="advancedPython">Programmation Python avancée : Lancez une interface de bloc-notes Python pour un codage avancé</system:String>
+
+    <!-- French -->
+    <system:String x:Key="step1Title">Étape 1</system:String>
+    <system:String x:Key="step1Desc">Allumez votre robot en appuyant sur l’interrupteur.</system:String>
+
+    <system:String x:Key="step2Title">Étape 2</system:String>
+    <system:String x:Key="step2Desc">Branchez le câble USB-C à votre robot et connectez-le à votre PC.</system:String>
+
+    <system:String x:Key="step3Title">Étape 3</system:String>
+    <system:String x:Key="step3Desc">Appuyez sur le bouton Boot (celui à l’arrière) et, tout en le maintenant enfoncé, appuyez sur le bouton Reset (celui de gauche). Relâchez d’abord le bouton Reset, puis le bouton Boot.</system:String>
+
     
 </ResourceDictionary>

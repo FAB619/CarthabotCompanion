@@ -62,6 +62,9 @@
     <None Remove="Resources\robotR.png" />
     <None Remove="Resources\robotU.png" />
     <None Remove="Resources\Settings.ini" />
+    <None Remove="Resources\STEP 1.png" />
+    <None Remove="Resources\STEP 2.png" />
+    <None Remove="Resources\STEP 3.png" />
     <None Remove="Resources\technical-drawing.png" />
     <None Remove="Resources\u2f\BootLoader_microPython.uf2" />
     <None Remove="Resources\u2f\MazeCode.uf2" />
@@ -193,6 +196,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\robotR.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\STEP 1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\STEP 2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\STEP 3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\technical-drawing.png">

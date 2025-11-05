@@ -4,7 +4,6 @@
              xmlns:prism="http://prismlibrary.com/"
              xmlns:controls="clr-namespace:DMSkin.WPF.Controls;assembly=DMSkin.WPF"
              xmlns:iconpack="http://metro.mahapps.com/winfx/xaml/iconpacks"
-             xmlns:gif="http://wpfanimatedgif.codeplex.com"
              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
                 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
                 prism:ViewModelLocator.AutoWireViewModel="True">
@@ -258,7 +257,7 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <Grid Grid.Row="1" Margin="200"  HorizontalAlignment="Center">
+                <Grid Grid.Row="1" Margin="0 20" HorizontalAlignment="Center">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="auto"/>
@@ -266,7 +265,104 @@
                         <RowDefinition Height="auto"/>
 
                     </Grid.RowDefinitions>
-                    <Image gif:ImageBehavior.AnimatedSource="../Resources/PowerOn2.gif" />
+
+                    <Border Margin="20" CornerRadius="10">
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <Border Background="White" Margin="5" BorderBrush="#0060ac" BorderThickness="3" CornerRadius="10">
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="5">
+
+                                    <Border Background="#0060ac" BorderBrush="Gray"
+                                        CornerRadius="10"
+                                        HorizontalAlignment="Left"
+                                        BorderThickness="1">
+                                        <TextBlock Text="{DynamicResource step1Title}" FontSize="18" Padding="10 5" FontWeight="Bold"/>
+                                    </Border>
+                                    <Border VerticalAlignment="Top">
+                                        <Image Source="/Resources/STEP 1.png">
+                                        </Image>
+                                    </Border>
+
+
+
+                                    <Border Margin="0 5" BorderBrush="Gray"
+                                        CornerRadius="10"
+                                        HorizontalAlignment="Left"
+                                        BorderThickness="0">
+                                        <TextBlock Foreground="Black"  TextWrapping="Wrap" 
+                                               Text="{DynamicResource step1Desc}"
+                                               FontSize="18" FontWeight="DemiBold"/>
+                                    </Border>
+                                </StackPanel>
+
+                            </Border>
+                            <Border Grid.Column="1" Margin="5" Background="White" BorderBrush="#0060ac" BorderThickness="3" CornerRadius="10">
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="5">
+
+
+                                    <Border Background="#0060ac" BorderBrush="Gray"
+                                        CornerRadius="10"
+                                        HorizontalAlignment="Left"
+                                        BorderThickness="1">
+                                        <TextBlock Text="{DynamicResource step2Title}" FontSize="18" Padding="10 5" FontWeight="Bold"/>
+                                    </Border>
+                                    <Border VerticalAlignment="Top">
+                                        <Image Source="/Resources/STEP 2.png">
+                                        </Image>
+                                    </Border>
+                                    <Border Margin="0 5" BorderBrush="Gray"
+                                        CornerRadius="10"
+                                        HorizontalAlignment="Left"
+                                        BorderThickness="0">
+                                        <TextBlock Foreground="Black" TextWrapping="Wrap" 
+                                               Text="{DynamicResource step2Desc}"
+                                               FontSize="18" FontWeight="DemiBold"/>
+                                    </Border>
+
+
+                                </StackPanel>
+
+                            </Border>
+                            <Border Grid.Column="2" Margin="5" Background="White" BorderBrush="#0060ac" BorderThickness="3" CornerRadius="10">
+                                <StackPanel Grid.Column="2" Orientation="Vertical" Margin="5" VerticalAlignment="Top">
+
+                                    <Border Background="#0060ac" BorderBrush="Gray"
+                                        CornerRadius="10"
+                                        HorizontalAlignment="Left"
+                                        BorderThickness="1">
+                                        <TextBlock Text="{DynamicResource step3Title}" FontSize="18" Padding="10 5" FontWeight="Bold"/>
+                                    </Border>
+                                    
+                                    <Border VerticalAlignment="Top">
+                                        <Image Source="/Resources/STEP 3.png">
+
+                                        </Image>
+                                    </Border>
+
+
+                                    <Border Margin="0 5" BorderBrush="Gray"
+                                        CornerRadius="10"
+                                        HorizontalAlignment="Left"
+                                        BorderThickness="0">
+                                        <TextBlock Foreground="Black" TextWrapping="Wrap" 
+                                               Text="{DynamicResource step3Desc}"
+                                               FontSize="18" FontWeight="DemiBold"/>
+                                    </Border>
+
+
+                                </StackPanel>
+
+                            </Border>
+                        </Grid>
+                        
+
+                    </Border>
                     <Grid Grid.Row="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>

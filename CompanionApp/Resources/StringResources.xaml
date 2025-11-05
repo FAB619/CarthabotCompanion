@@ -75,4 +75,15 @@
     <system:String x:Key="learnVisualProgramming">Learn Visual Programming: Launch a drag-and-drop programming interface (similar to Scratch)</system:String>
     <system:String x:Key="advancedPython">Advanced Python Programming: Launch a Python Notepad interface for advanced coding</system:String>
 
+    <!-- English -->
+    <system:String x:Key="step1Title">Step 1</system:String>
+    <system:String x:Key="step1Desc">Turn On your robot by pushing down the switch.</system:String>
+
+    <system:String x:Key="step2Title">Step 2</system:String>
+    <system:String x:Key="step2Desc">Plug the USB-C cable to your robot and hook it to your PC.</system:String>
+
+    <system:String x:Key="step3Title">Step 3</system:String>
+    <system:String x:Key="step3Desc">Press the boot button (the one in the back) and while pressing, press on the reset button (the one on the left). Release the reset button first and then release the boot button.</system:String>
+
+    
 </ResourceDictionary>
